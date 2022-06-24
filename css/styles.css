@@ -73,6 +73,9 @@ ol {
   padding-bottom: 94px;
 }
 
+.button {
+}
+
 .nopadding {
   padding-bottom: 0;
 }
@@ -98,7 +101,7 @@ ol {
   color: var(--accent-color);
 }
 
-.headerlogo {
+.header__logo {
   padding-top: 25px;
   padding-bottom: 25px;
   margin-right: 93px;
@@ -208,10 +211,9 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -245,7 +247,7 @@ ol {
   background-color: var(--secondary-accent-color);
 }
 
-/*--------Benefits--------*/
+/*--------------------Benefits------------------------*/
 
 .benefits-list {
   display: flex;
