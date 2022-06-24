@@ -77,7 +77,7 @@ ol {
   padding-bottom: 0;
 }
 
-/*--------Header---------*/
+/*----------------------Header-------------------------*/
 
 .header {
   background-color: var(--secondary-background-color);
@@ -104,7 +104,7 @@ ol {
   margin-right: 93px;
 }
 
-.header-studio {
+.logo__text {
   color: var(--title-text-color);
 }
 
@@ -113,7 +113,7 @@ ol {
   align-items: center;
 }
 
-.header-list .link {
+.header-list__link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -122,8 +122,8 @@ ol {
   transition: var(--transition);
 }
 
-.header-list .link:hover,
-.header-list .link:focus {
+.header-list__link:hover,
+.header-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -131,15 +131,15 @@ ol {
   color: var(--accent-color);
 }
 
-.header-item:not(:last-child) {
+.header-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-link {
+.header-list__link {
   position: relative;
 }
 
-.link.current::after {
+.header-list__link.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -152,35 +152,29 @@ ol {
   transition: var(--transition-background-color);
 }
 
-.header-link:hover::after,
-.header-link:focus::after {
+.header-list__link:hover::after,
+.header-list__link:focus::after {
   background-color: var(--accent-color);
 }
 
-.link.current::after {
+.header-list__link.current::after {
   background-color: var(--accent-color);
 }
 
 .contacts {
+  margin-left: auto;
+}
+
+.contacts-list {
   display: flex;
   align-items: center;
 }
 
-.contacts-icon {
-  display: block;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contacts-item:not(:last-child) {
+.contacts-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.mail-tel {
-  margin-left: auto;
-}
-
-.contacts-link {
+.contacts-list__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -191,12 +185,18 @@ ol {
   transition: var(--transition);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-list__link:hover,
+.contacts-list__link:focus {
   color: var(--accent-color);
 }
 
-/*-------------Hero-------------*/
+.contacts-list__icon {
+  display: block;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/*-------------------------Hero------------------------*/
 .hero {
   background-color: var(--accent-background-color);
   padding-top: 200px;
