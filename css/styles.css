@@ -796,13 +796,13 @@ ol {
 
 /*---------------------Стили Портфолио---------------------*/
 
-.projects-list {
+.projects__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.projects-item:not(:last-child) {
+.projects__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -846,17 +846,38 @@ ol {
   background-color: var(--secondary-background-color);
 }
 
+.example-list__item {
+  flex-basis: calc((100-90px) / 3);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 .example-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.example-thumb {
+.example-link:hover .example-link__thumb-text,
+.example-link:focus .example-link__thumb-text {
+  transform: translateY(0);
+}
+
+.example-link:hover,
+.example-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.example-link__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.example-thumb-text {
+.example-link__photo {
+  display: block;
+}
+
+.example-link__thumb-text {
   position: absolute;
   top: 0;
   padding: 63px 24px;
@@ -871,24 +892,14 @@ ol {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.example-link:hover .example-thumb-text,
-.example-link:focus .example-thumb-text {
-  transform: translateY(0);
+.example-link__photo-title {
+  padding: 20px 24px;
+  border-left: 1px solid var(--portfolio-border-color);
+  border-bottom: 1px solid var(--portfolio-border-color);
+  border-right: 1px solid var(--portfolio-border-color);
 }
 
-.example-link:hover,
-.example-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.example-item {
-  flex-basis: calc((100-90px) / 3);
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-
-.example-list .example-title {
+.example-link__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -896,21 +907,10 @@ ol {
   color: var(--title-text-color);
 }
 
-.example-list .example-text {
+.example-link__text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   margin-top: 4px;
   color: var(--primary-text-color);
-}
-
-.photo-title {
-  padding: 20px 24px;
-  border-left: 1px solid var(--portfolio-border-color);
-  border-bottom: 1px solid var(--portfolio-border-color);
-  border-right: 1px solid var(--portfolio-border-color);
-}
-
-.photo {
-  display: block;
 }
