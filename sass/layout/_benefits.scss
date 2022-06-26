@@ -5,6 +5,9 @@
 .benefits-list {
   display: flex;
   align-items: center;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .benefits-list__icon {
@@ -16,10 +19,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.benefits-list__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .benefits-list__subtitle {

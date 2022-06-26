@@ -24,10 +24,9 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-}
-
-.address-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address-list__link {
@@ -38,13 +37,12 @@
 .address-list__tel {
   color: rgba(255, 255, 255, 0.6);
   transition: var(--transition);
-}
-
-.address-list__mail:hover,
-.address-list__mail:focus,
-.address-list__tel:hover,
-.address-list__tel:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus,
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-social {
@@ -64,10 +62,9 @@
 
 .footer-list {
   display: flex;
-}
-
-.footer-list__item:not(:last-child) {
-  margin-right: 10px;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer-list__link {
@@ -80,11 +77,10 @@
   background: rgba(255, 255, 255, 0.1);
   color: var(--secondary-background-color);
   transition: var(--transition);
-}
-
-.footer-list__link:hover,
-.footer-list__link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .subscribe-form {
@@ -105,18 +101,17 @@
   color: var(--secondary-background-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
-}
-
-.subscribe-form__input:hover,
-.subscribe-form__input:focus {
-  border-color: var(--accent-color);
-}
-.subscribe-form__input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .subscribe__button {
@@ -129,13 +124,12 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--secondary-background-color);
-}
-
-.subscribe__button:hover,
-.subscribe__button:focus {
-  background-color: var(--secondary-background-color);
-  color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-background-color);
+    color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .button__icon {
