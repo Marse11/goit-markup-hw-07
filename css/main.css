@@ -394,6 +394,9 @@ body {
 .header-list__item:not(:last-child) {
   margin-right: 50px;
 }
+.header-list .current {
+  color: var(--accent-color);
+}
 
 .header-list__link {
   font-weight: 500;
@@ -404,10 +407,6 @@ body {
   transition: var(--transition);
 }
 .header-list__link:hover, .header-list__link:focus {
-  color: var(--accent-color);
-}
-
-.header-list .current {
   color: var(--accent-color);
 }
 
