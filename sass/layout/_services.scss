@@ -12,10 +12,9 @@
 
 .services-list {
   display: flex;
-}
-
-.services-list__item:not(:last-child) {
-  margin-right: 30px;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .services-list__item {

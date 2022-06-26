@@ -544,7 +544,6 @@ body {
 .services-list {
   display: flex;
 }
-
 .services-list__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -607,7 +606,6 @@ body {
   border-radius: 0px 0px 4px 4px;
   border: 1px solid var(--primary-background-color);
 }
-
 .team-list__item:not(:last-child) {
   margin-right: 30px;
 }
