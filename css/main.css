@@ -465,6 +465,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero__title {
